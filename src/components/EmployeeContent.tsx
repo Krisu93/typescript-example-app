@@ -6,12 +6,9 @@ import {Employee} from "../model/Employee";
 
 import "../css/styles.css"
 
-interface Props{
-    regions: string[]
-}
 
-const EmployeeContent:React.FC<Props> = ({regions}) => {
-
+const EmployeeContent:React.FC = () => {
+    const regions: string[] = ["Asia", "Central Europe", "North Europe", "UK", "USA"];
     const [employee, setEmployee] = useState<Employee>(new Employee());
     const [employees, setEmployees] = useState<Employee[]>([])
 
